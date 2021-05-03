@@ -1,0 +1,36 @@
+name: Docker build and publish
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push only for the master branch
+  push:
+    branches: [ master ]
+
+jobs:
+  # This workflow contains a single job called "build"
+  build-publish:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      # Hugo themes are git submodules: "submodules: true" needed
+      - name: Check out code
+        uses: actions/checkout@v2
+        with:
+          submodules: true
+      # Docker build and publish
+      - name: Build & push Docker image
+        uses: mr-smithers-excellent/docker-build-push@v5
+        with:
+          image: fsemeraro96/hugo-site
+          tags: v1
+          registry: docker.io
+          dockerfile: Dockerfile
+          username: ${{ secrets.DOCKERHUB_USER }}
+          password: ${{ secrets.DOCKERHUB_PWD }}
+      #Deploy website on k8s cluster (crownlabs)
+      - name: Deploy website on K8s cluster
+        uses: giorio94/kubectl-oidc-action@1.1.0
+        with:
+          kubeconfig: ${{ secrets.KUBECONFIG }}
+          args: apply -f template-deploy.yaml --namespace=sandbox-s291498
