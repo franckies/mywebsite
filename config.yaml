@@ -9,7 +9,7 @@ theme: hugo-refresh
 #########################################
 # This options specify where to look for the images used in this config
 # The default value is the "asset" directory of this theme
-# assetDir: "static"
+assetDir: "/resources/_gen/assets"
 
 # Option to specify the default language of the theme
 # I.e., the landing language of your root 
@@ -122,11 +122,11 @@ params:
     # option to specify your contact email in the footer
     email: 
       link: fk.semeraro@gmail.com
-      title: My Email
+      title: Email
     # option to specify your linkedin profile in the footer
     linkedin: 
-      link: https://www.linkedin.com/in/francesco-semeraro-09b305190/
-      title: My LinkedIn
+      link: in/francesco-semeraro-09b305190
+      title: LinkedIn
     # option to specify your facebook account in the footer; 
     # **uncomment** the lines below to show in footer
     # facebook: 
@@ -135,7 +135,7 @@ params:
     # option to specify your github account in the footer; 
     # **uncomment** the below lines to show in footer
     github: 
-      link: https://github.com/franckies
+      link: franckies
       title: Github
     # option to specify your twitter username in the footer; 
     # **uncomment** the below lines to show in footer
@@ -183,7 +183,7 @@ languages:
           link: fk.semeraro@gmail.com
           title: Email
         linkedin: 
-          link: https://www.linkedin.com/in/francesco-semeraro-09b305190/
+          link: in/francesco-semeraro-09b305190
           title: LinkedIn
         # facebook: 
         #   link: your.username
@@ -195,7 +195,7 @@ languages:
         #   link: username
         #   title: Instagram
         github: 
-            link: https://github.com/franckies
+            link: franckies
             title: Github
         copyright: FS - 2020
       
