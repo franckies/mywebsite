@@ -4,6 +4,7 @@ date: 2019-06-04T21:55:06+01:00
 draft: false
 hideLastModified: true
 tags: ["kubernetes", "basics"]
+summary: "Kubernetes key principles and functionalities"
 ---
 ## Key Principles
 Micro-services need to be orchestrated. The best way is to have an orchestrator, like Kubernetes. What does the orchestrator?

@@ -4,6 +4,7 @@ date: 2019-06-04T21:55:06+01:00
 draft: false
 hideLastModified: true
 tags: ["kubernetes", "architecture"]
+summary: "Short overview of the Kubernetes software architecture"
 ---
 ## Architecture
 The software architecture is depicted in the above picture.

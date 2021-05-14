@@ -2,3 +2,4 @@ public/
 .git/
 .gitmodules/
 .gitignore
+.vscode/
