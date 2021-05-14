@@ -6,4 +6,3 @@ docker run -p 8080:80 fsemeraro96/hugo-site:tag
 ```
 ## CI / CD
 Through the use of github actions each time a push is performed a new Docker image is built and pushed to my docker registry and a new POD within a K8s cluster hosted by [Crownlabs](https://crownlabs.polito.it/) is instantiated, replacing the old one.
->>>>>>> 3fe37833d4190e2f4b0457fae3f56812e9776a78
