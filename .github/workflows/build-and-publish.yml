@@ -1,4 +1,4 @@
-name: Docker build and publish
+name: Build and publish
 
 # Controls when the action will run. 
 on:
@@ -51,5 +51,4 @@ jobs:
           TARGET_BRANCH: master
           TOKEN: ${{ secrets.API_TOKEN_GITHUB }}
           HUGO_ARGS: '-v'
-          CNAME: franckies.github.io
 

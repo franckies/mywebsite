@@ -3,6 +3,8 @@ title: "Kubernetes architecture"
 date: 2019-06-04T21:55:06+01:00
 draft: false
 hideLastModified: true
+summaryImage: "images/k8s.png"
+keepImageRatio: true
 tags: ["kubernetes", "architecture"]
 summary: "Short overview of the Kubernetes software architecture"
 ---

@@ -102,13 +102,13 @@ params:
   homepage:
     # this options let you specify if you want a link to the homepage
     # it can be: "none", "menu", "footer" or "menu+footer"
-    # linkPosition: "footer" 
+    linkPosition: "menu" 
     # this options let you specify the text of the link to the homepage
-    # linkText: "Homepage"  
+    linkText: "Homepage"  
     # option to specify the title in the homepage
     title: Francesco Semeraro
     # option to specify the subtitle in the homepage
-    subtitle: Personal website
+    subtitle: Personal website - 🚧Work in progress🚧
     # option to specify image in the homepage
     image: "/images/avatar.png" # worker.svg 
     # option to specify the width of the image in the homepage

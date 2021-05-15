@@ -6,4 +6,5 @@ hideLastModified: true
 # no need for the "summary" parameter as it is not displayed in any previews
 ---
 
-The images used in the site comes from https://getavataaars.com/.
+The website is built on top of the hugo theme https://github.com/PippoRJ/hugo-refresh.
+The avatar in the site comes from https://getavataaars.com/.
