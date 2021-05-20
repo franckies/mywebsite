@@ -24,11 +24,11 @@ Master's thesis at [mOve research lab](https://www.move.deib.polimi.it/) in coll
 {{< /book >}}
 
 ## Education
-{{< book title="2nd level Master's degree, Artificial IntelliJance & Cloud" authors="Politecnico di Torino, Jan 2021 - Present" image="images/polito.png" size="300x" >}}
-The Master's Programme illustrates how to concretely use modern digital technologies, from effective data management to the adoption of Artificial IntelliJance and Machine Learning techniques, all through the most recent implementation models on the Cloud.
+{{< book title="2nd level Master's degree, Artificial Intelligence & Cloud" authors="Politecnico di Torino, Jan 2021 - Present" image="images/polito.png" size="300x" >}}
+The Master's Programme illustrates how to concretely use modern digital technologies, from effective data management to the adoption of Artificial Intelligence and Machine Learning techniques, all through the most recent implementation models on the Cloud.
 {{< /book >}}
 {{< book title="Master's degree, Computer science and engineering" authors="Politecnico di Milano, Sept 2018 - Dec 2020" image="images/polimi.png" size="300x" >}}
-**Relevant courses**: Computing infrastructures, model identification and data analysis, image analysis and computer vision, artificial intelliJance.
+**Relevant courses**: Computing infrastructures, model identification and data analysis, image analysis and computer vision, artificial intelligence.
 {{< /book >}}
 {{< book title="Erasmus program" authors="Slovak University of Technology, Sept 2019- Jan 2020" image="images/stu.png" size="300x" >}}
 {{< /book >}}
