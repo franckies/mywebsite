@@ -5,7 +5,7 @@ draft: false
 hideLastModified: true
 summaryImage: "images/k8s.png"
 keepImageRatio: true
-tags: ["kubernetes", "resources"]
+tags: ["kubernetes"]
 summary: "Short overview of Kubernetes resources"
 ---
 ## Resources Configuration

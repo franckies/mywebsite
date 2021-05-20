@@ -1,4 +1,6 @@
 # Mywebsite
+![Build and publish](https://github.com/franckies/mywebsite/actions/workflows/build-and-publish.yml/badge.svg)
+
 Hugo powered website. Theme by [Hugo refresh](https://github.com/PippoRJ/hugo-refresh/tree/2f61f41d97d7955e6de02b84565ec0e18f5fefe8).
 ## Get started
 ```

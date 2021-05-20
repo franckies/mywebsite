@@ -37,11 +37,11 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USER }}
           password: ${{ secrets.DOCKERHUB_PWD }}
       #Deploy website on k8s cluster (crownlabs)
-      - name: Deploy website on K8s cluster
-        uses: giorio94/kubectl-oidc-action@1.1.0
-        with:
-          kubeconfig: ${{ secrets.KUBECONFIG }}
-          args: apply -f my-deploy.yaml --namespace=sandbox-s291498
+      # - name: Deploy website on K8s cluster
+      #   uses: giorio94/kubectl-oidc-action@1.1.0
+      #   with:
+      #     kubeconfig: ${{ secrets.KUBECONFIG }}
+      #     args: apply -f my-deploy.yaml --namespace=sandbox-s291498
       #Build hugo and copy content on github.io site
       - name: Deploy the site
         uses: benmatselby/hugo-deploy-gh-pages@master

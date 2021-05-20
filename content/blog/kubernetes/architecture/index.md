@@ -5,7 +5,7 @@ draft: false
 hideLastModified: true
 summaryImage: "images/k8s.png"
 keepImageRatio: true
-tags: ["kubernetes", "architecture"]
+tags: ["kubernetes"]
 summary: "Short overview of the Kubernetes software architecture"
 ---
 ## Architecture

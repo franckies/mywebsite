@@ -24,12 +24,17 @@ With this project I carried out an implementation of a smart control mechanism f
 # Software
 The web application interface allows you to turn on/off the DC motor and the servo motor using the START/STOP buttons, and to enable/disable the auto-drive mode using the AUTODRIVE button. The two sliders allow manual control for regulating the speed and the steering angle. The gauge graphically shows the car’s speed.
 {{< figure src="images/interface.png" width="700" >}}
+
+
 The software part consists of three python files:
 - Server.py – using the flask web application framework to create and render the web application with all the manual controls for the car’s movements. 
 - MotorA.py – controlling the DC motor and reading serial data from ultrasonic sensor;
 - MotorB.py – controlling the servo motor and reading data from infrared sensors for autonomous driving.
+
 and one HTML file:
 - Index.html – creating the web application interface and implementing the client-server communication through the Javascript library Socket.IO.
+
+
 The basic functioning can be schematized as follows: 
 1.	On the web application the START button is pressed;
 2.	A message is sent on web socket communication, and a variable is set on the server.

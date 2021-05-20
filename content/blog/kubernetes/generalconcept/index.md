@@ -5,7 +5,7 @@ draft: false
 hideLastModified: true
 summaryImage: "images/k8s.png"
 keepImageRatio: true
-tags: ["kubernetes", "basics"]
+tags: ["kubernetes"]
 summary: "Kubernetes key principles and functionalities"
 ---
 ## Key Principles
