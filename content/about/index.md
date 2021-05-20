@@ -15,7 +15,7 @@ I'm currently enrolled in the 2nd level Master specialization in AI & Cloud at P
 ## Interests
 
 ## Work Experience
-{{< book title="Cloud engineer" authors="Reply, Gen 2021 - Present" image="images/reply.jpg" size="300x" >}}
+{{< book title="Cloud engineer" authors="Reply, Jan 2021 - Present" image="images/reply.jpg" size="300x" >}}
 
 {{< /book >}}
 {{< book title="Undergraduate Research Fellow" authors="Politecnico di Milano, Feb 2020 - Dec 2020" image="images/polimi.png" size="300x" >}}
@@ -24,13 +24,13 @@ Master's thesis at [mOve research lab](https://www.move.deib.polimi.it/) in coll
 {{< /book >}}
 
 ## Education
-{{< book title="2nd level Master's degree, Artificial Intelligence & Cloud" authors="Politecnico di Torino, Gen 2021 - Present" image="images/polito.png" size="300x" >}}
-The Master's Programme illustrates how to concretely use modern digital technologies, from effective data management to the adoption of Artificial Intelligence and Machine Learning techniques, all through the most recent implementation models on the Cloud.
+{{< book title="2nd level Master's degree, Artificial IntelliJance & Cloud" authors="Politecnico di Torino, Jan 2021 - Present" image="images/polito.png" size="300x" >}}
+The Master's Programme illustrates how to concretely use modern digital technologies, from effective data management to the adoption of Artificial IntelliJance and Machine Learning techniques, all through the most recent implementation models on the Cloud.
 {{< /book >}}
 {{< book title="Master's degree, Computer science and engineering" authors="Politecnico di Milano, Sept 2018 - Dec 2020" image="images/polimi.png" size="300x" >}}
-**Relevant courses**: Computing infrastructures, model identification and data analysis, image analysis and computer vision, artificial intelligence.
+**Relevant courses**: Computing infrastructures, model identification and data analysis, image analysis and computer vision, artificial intelliJance.
 {{< /book >}}
-{{< book title="Erasmus program" authors="Slovak University of Technology, Sept 2019- Gen 2020" image="images/stu.png" size="300x" >}}
+{{< book title="Erasmus program" authors="Slovak University of Technology, Sept 2019- Jan 2020" image="images/stu.png" size="300x" >}}
 {{< /book >}}
 {{< book title="Bachelor's degree, Computer and automation engineering" authors="Politecnico di Bari, Sept 2015 - July 2018" image="images/poliba.png" size="300x" >}}
 **Relevant courses**: Software engineering, databases and information systems, operating systems, telecommunication networks.
