@@ -10,6 +10,8 @@ summary: "High Available Wordpress Hosting on AWS with Terraform."
 ---
 # Overview
 [This project](https://github.com/franckies/HAWordpress-AWS) aims at building an high available wordpress web application hosted in AWS using Terraform. The infrastracture schema is represented in this picture (Amazon CloudFront and Route 53 will not be considered):
+
+
 ![infra](./images/infra.jpg)
 
 ## Components

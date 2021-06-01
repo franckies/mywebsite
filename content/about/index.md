@@ -13,7 +13,8 @@ Savaresi and covered a practical implementation of Augmented Reality in the auto
 I'm currently enrolled in the 2nd level Master specialization in AI & Cloud at Politecnico di Torino.
 
 ## Interests
-<img src="images/interests.png" width="400">
+{{< title6 "Spatial Computing" >}} {{< title6 "Cloud Computing" >}} {{< title6 "Azure" >}}  {{< title6 "Artificial Intelligence" >}} 
+{{< title6 "DevOps" >}} {{< title6 "Coding" >}} 
 
 ## Work Experience
 {{< book title="Cloud engineer" authors="Reply, Jan 2021 - Present" image="images/reply.jpg" size="300x" >}}
