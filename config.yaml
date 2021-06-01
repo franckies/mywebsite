@@ -108,7 +108,7 @@ params:
     # option to specify the title in the homepage
     title: Francesco Semeraro
     # option to specify the subtitle in the homepage
-    subtitle: Personal website - 🚧Work in progress🚧
+    subtitle: Personal website 
     # option to specify image in the homepage
     image: "/images/avatar.png" # worker.svg 
     # option to specify the width of the image in the homepage
@@ -168,7 +168,7 @@ languages:
     params:
       homepage:
         title: Francesco Semeraro
-        subtitle: Sito Web Personale
+        subtitle: Sito Web Personale - 🚧Work in progress🚧
         image: "/images/avatar.png" # worker.svg 
         imageWidth: 500px
       

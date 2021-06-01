@@ -13,6 +13,7 @@ Savaresi and covered a practical implementation of Augmented Reality in the auto
 I'm currently enrolled in the 2nd level Master specialization in AI & Cloud at Politecnico di Torino.
 
 ## Interests
+<img src="images/interests.png" width="400">
 
 ## Work Experience
 {{< book title="Cloud engineer" authors="Reply, Jan 2021 - Present" image="images/reply.jpg" size="300x" >}}
@@ -35,8 +36,6 @@ The Master's Programme illustrates how to concretely use modern digital technolo
 {{< book title="Bachelor's degree, Computer and automation engineering" authors="Politecnico di Bari, Sept 2015 - July 2018" image="images/poliba.png" size="300x" >}}
 **Relevant courses**: Software engineering, databases and information systems, operating systems, telecommunication networks.
 {{< /book >}}
-
-## Miscellaneous
 
 ## Publications
 1. **Teaching Internet of Things using a Raspberry PI based RC-car**, Pavol Bistack, Reza Moezzi, Giuseppina Nicassio, Francesco Semeraro. IEEE - 2020. 
