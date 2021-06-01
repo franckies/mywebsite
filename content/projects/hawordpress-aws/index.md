@@ -1,6 +1,6 @@
 ---
 title: "HA Wordpress Hosting on AWS with Terraform"
-date: 2021-06-01T21:55:06+01:00
+date: 2021-05-01T21:55:06+01:00
 draft: false
 hideLastModified: true
 summaryImage: "images/cover.jpg"
