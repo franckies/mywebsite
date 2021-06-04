@@ -1,6 +1,6 @@
 ---
 title: "Augmented Reality ADAS for HMDs"
-date: 2020-02-01T21:55:06+01:00
+date: 2021-02-01T21:55:06+01:00
 draft: false
 hideLastModified: true
 summaryImage: "images/ar.jpg"
