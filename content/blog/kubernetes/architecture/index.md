@@ -11,6 +11,7 @@ summary: "Short overview of the Kubernetes software architecture."
 ## Architecture
 The software architecture is depicted in the above picture.
 There are different types of components, 1) node components, which are components that must be installed and run on each node, and 2) k8s master component, which are component running on the master node.
+{{< figure src="images/architecturek8s.png" width="700" >}}
 ### Node components
 #### Container runtime
 First, for letting K8s work, a container runtime is needed, like Docker. This is because pods are basically abstractions for containers, and therefore a container runtime must be run on every node.
