@@ -6,7 +6,7 @@ hideLastModified: true
 showInMenu: true
 # no need for the "summary" parameter as it is not displayed in any previews
 ---
-
+{{< figure src="images/resized.jpg" width="500" >}}
 I am a Cloud Engineer at [Reply](https://www.reply.com/cluster-reply/en/), in Milan (IT) working mainly on Microsoft technologies.
 I completed my Master's degree in 2020 at Politecnico di Milano. My research thesis was supervised by Prof. Sergio M. 
 Savaresi and covered a practical implementation of Augmented Reality in the automotive field using Head Mounted Displays. 

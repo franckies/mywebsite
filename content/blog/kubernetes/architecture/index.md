@@ -9,7 +9,7 @@ tags: ["kubernetes"]
 summary: "Short overview of the Kubernetes software architecture."
 ---
 ## Architecture
-The software architecture is depicted in the above picture.
+The software architecture is depicted in the below picture.
 There are different types of components, 1) node components, which are components that must be installed and run on each node, and 2) k8s master component, which are component running on the master node.
 {{< figure src="images/architecturek8s.png" width="700" >}}
 ### Node components
