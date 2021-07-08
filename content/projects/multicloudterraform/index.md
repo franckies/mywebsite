@@ -3,7 +3,7 @@ title: "Multi cloud on terraform"
 date: 2021-06-01T21:55:06+01:00
 draft: false
 hideLastModified: true
-#summaryImage: "images/demo.jpg"
+summaryImage: "images/cover.png"
 #keepImageRatio: true
 tags: ["terraform", "cloud"]
 summary: "Multi cloud infrastructure on terraform"
@@ -25,11 +25,11 @@ Terraform is not a configuration management tool, but for simple scenarios it ca
 
 The web application simply consists of a fancy button, colored in blue for Azure and in orange for Aws, which displays a counter that is incremented each time the button is pressed. Behind the hood, the frontend javascript executes REST calls to the backend serverless function, which is in charge of actually increasing the counter value and storing it into a managed database. 
 
-{{< figure src="images/application-design.png" width="700" >}}
+{{< figure src="images/application-design.png" width="200" >}}
 
 A simple _use case_ diagram for the application can be found below.
 
-{{< figure src="images/uc-application.png" width="700" >}}
+{{< figure src="images/uc-application.png" width="400" >}}
 
 # The application
 Terraform is not a configuration management tool, but for simple scenarios it can be used also to provision an application deploying it on top of the infrastructure. In this case, being the presented application a simple web application, the deploy has been done:
@@ -39,7 +39,7 @@ Terraform is not a configuration management tool, but for simple scenarios it ca
 The web application simply consists of a fancy button, colored in blue for Azure and in orange for Aws, which displays a counter that is incremented each time the button is pressed. Behind the hood, the frontend javascript executes REST calls to the backend serverless function, which is in charge of actually increasing the counter value and storing it into a managed database. 
 
 # Project structure
-```bash
+```
 ├── aws
 │   ├── main.tf
 │   ├── modules
@@ -131,7 +131,7 @@ The backend layer is composed by two components:
 ### Data layer
 The data layer simply consists of a DynamoDB table, storing the value of the counter. The value of the counter can be read and written only by the lambda function, which has the necessary role and policies.
 
-{{< figure src="images/infra-aws.png" >}}
+{{< figure src="images/infra-aws.png" width="700" >}}
 
 # Azure
 In this section, the services used in the Azure infrastructure will be presented.
@@ -161,7 +161,7 @@ The function is written in javascript and has been configured using *output and 
 Moreover, the function code is automatically deployed using terraform, by pushing it in a _blob container storage_ which is specified as the source from which the function app will fetch the code. 
 It is worth it to specify that the azure function isn't publicly accessible, but can only be called through the endpoint exposed by the API management service. This has been implemented using *Azure AD authentication* to secure the azure function code. Locking down the azure function behind an API management service is useful for both ehnance the application security and for take advantage from the api management, which for instance allows you to ensure clients meet the quota requirements before a request is forwarded to the function. The image below taken from [this article](https://www.maxivanov.io/restrict-azure-functions-to-api-management-with-terraform/) clarifies how the authentication between the APIM and the Function APP works.
 
-{{< figure src="images/aad.jpg" width="700" >}}
+{{< figure src="images/aad.jpg" width="400" >}}
 
 Moreover, the app service plan supporting the function app is deployed with the _Premium_ sku tier, in order to allow the function app to be integrated within the Azure VNet.
 ### Data layer
@@ -171,13 +171,13 @@ The data layer consists of a CosmosDB table, storing the value of the counter. T
 
 The cosmos database is included within the azure VNet thorugh a _service endpoint_, and it is secured by including a firewall rule that only allow access from the intra subnet containing the function app.
 
-{{< figure src="images/infra-azure.png" >}}
+{{< figure src="images/infra-azure.png" width="700" >}}
 
 # Multicloud
 The multicloud infrastructure consists in deploying both the azure and the aws infrastructures, letting them communicate through REST calls respectively to the API management service and to the API gateway.
 The multicloud infrastructure is depicted in the below image:
 
-{{< figure src="images/infra-multicloud.png" >}}
+{{< figure src="images/infra-multicloud.png" width="500" >}}
 
 *Azure Traffic Manager* is a DNS-based traffic load balancer, which has been configured to redirect the incoming traffic to both the Azure and Aws infrastructures in a round-robin fashion. In this way our infrastructure can be consider highly available and fault-resilient, being the application deployed on two different cloud providers and split into different availability zones for each provider. In order to provide database synchronization, each time the counter value in the database of a given CSP is updated, a POST request is performed to the API of the other CSP keeping the counter value consistent across databases.
 Traffic manager also provides health monitoring for each endpoint, ensuring that in case of failure all the traffic is only redirected to the healthy endpoint.
