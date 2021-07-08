@@ -9,8 +9,7 @@ tags: ["terraform", "cloud"]
 summary: "Multi cloud infrastructure on terraform"
 ---
 # Overview
-The following project consists of the implementation of a 3-tier web application infrastructure on two different cloud service providers (CSPs), Aws and Azure. The objective is to highlight similarities and differences between the two CSPs in terms of offered services, performances, and easiness of deployment. Moreover, it will be pointed out to what extent terraform can be considered a _cloud agnostic tool_ observing the differences in the code written for the two CSPs. 
-Then, the power of Terraform will be fully exploited by combining together the two infrastructures: using *Azure Traffic Manager*, a single entry point for the application will be provided, and the incoming traffic will be redirected to the Azure and Aws infrastructures in a round-robin fashion using  the DNS-based traffic load balancer approach.
+The following project consists of the implementation of a 3-tier web application infrastructure on two different cloud service providers (CSPs), Aws and Azure using an *Infrastracture as Code* approach with *Terraform*. Then, the power of Terraform will be fully exploited by combining together the two infrastructures: using *Azure Traffic Manager*, a single entry point for the application will be provided, and the incoming traffic will be redirected to the Azure and Aws infrastructures in a round-robin fashion using  the DNS-based traffic load balancer approach.
 
 # IaC with Terraform
 Nowadays, the de-facto standard for IaC is Terraform which integrates with virtually all the available cloud providers and features a highly specialized domain-specific language called HCL. Terraform is a great tool with a very large community and a lot of open-source modules readily usable in the Terraform Registry.
