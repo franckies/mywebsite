@@ -1,12 +1,12 @@
 ---
-title: "Multi cloud on terraform"
+title: "Multicloud with terraform"
 date: 2021-06-01T21:55:06+01:00
 draft: false
 hideLastModified: true
 summaryImage: "images/cover.png"
 #keepImageRatio: true
 tags: ["terraform", "cloud"]
-summary: "Multi cloud infrastructure on terraform"
+summary: "Multicloud 3-tier web application with terraform"
 ---
 # Overview
 The following project consists of the implementation of a 3-tier web application infrastructure on two different cloud service providers (CSPs), Aws and Azure using an *Infrastracture as Code* approach with *Terraform*. Then, the power of Terraform will be fully exploited by combining together the two infrastructures: using *Azure Traffic Manager*, a single entry point for the application will be provided, and the incoming traffic will be redirected to the Azure and Aws infrastructures in a round-robin fashion using  the DNS-based traffic load balancer approach.
