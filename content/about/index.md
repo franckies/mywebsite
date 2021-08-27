@@ -27,7 +27,8 @@ Master's thesis at [mOve research lab](https://www.move.deib.polimi.it/) in coll
 
 ## Education
 {{< book title="2nd level Master's degree, Artificial Intelligence & Cloud" authors="Politecnico di Torino, Jan 2021 - Present" image="images/polito.png" size="300x" >}}
-The Master's Programme illustrates how to concretely use modern digital technologies, from effective data management to the adoption of Artificial Intelligence and Machine Learning techniques, all through the most recent implementation models on the Cloud.
+The Master’s Programme illustrates how to concretely use modern digital technologies, from effective data management to the adoption of Artificial Intelligence and Machine Learning techniques, all through the most recent implementation models on the Cloud.
+The cloud specialisation explores the main components that characterise IaaS and PaaS solutions on the four main cloud service providers (Azure, Aws, GCP and Oracle Cloud). Throughout the deep dive on CSPs, particular emphasis is laid on the Devops approach and Infrastructure as Code, microservice-based architectures using containerization (Docker, Kubernetes, OpenShift) and serverless development.
 {{< /book >}}
 {{< book title="Master's degree, Computer science and engineering" authors="Politecnico di Milano, Sept 2018 - Dec 2020" image="images/polimi.png" size="300x" >}}
 **Relevant courses**: Computing infrastructures, model identification and data analysis, image analysis and computer vision, artificial intelligence.
