@@ -3,7 +3,7 @@ title: "My Website"
 date: 2021-04-01T21:55:06+01:00
 draft: false
 hideLastModified: true
-summaryImage: "images/image.png"
+summaryImage: "images/image.jpg"
 keepImageRatio: true
 tags: ["devops"]
 summary: "My personal website powered by Hugo implementing CI/CD through GitHub actions."
