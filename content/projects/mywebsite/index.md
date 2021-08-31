@@ -15,7 +15,7 @@ summary: "My personal website powered by Hugo implementing CI/CD through GitHub 
 - All is obtained without writing html/css pages or programming code.
 
 # Hugo 
-Hugo is an open-source static site generator, written in Go: it is flexible and quick, files written in markdown syntax are converted into html a lot of predefined templates called themes. It is very useful when building static sites as personal pages, blogs, documentation resources, company or product pages. For my personal website I used the [Refresh theme](https://github.com/PippoRJ/hugo-refresh/tree/2f61f41d97d7955e6de02b84565ec0e18f5fefe8).
+Hugo is an open-source static site generator, written in Go: it is flexible and quick, files written in markdown syntax are converted into html and there are a lot of predefined templates called themes. It is very useful when building static sites as personal pages, blogs, documentation resources, company or product pages. For my personal website I used the [Refresh theme](https://github.com/PippoRJ/hugo-refresh/tree/2f61f41d97d7955e6de02b84565ec0e18f5fefe8).
 
 # GitHub actions
 GitHub actions allows you to create pipelines to automate build and release processes.
