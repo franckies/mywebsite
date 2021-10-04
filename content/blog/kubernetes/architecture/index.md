@@ -37,7 +37,7 @@ is why major cloud providers like **Azure Kubernetes Service** (*AKS*),
 Engine** (*GKE*) include HA masters in their hosted Kubernetes systems .
 In general, in a *HA* arrangement, three or five replicated masters are
 suggested. The different master services that make up the control plane
-are the following
+are the following.
 #### API server
 All communication between Kubernetes components must occur through the API server. It has a RESTful API that can be used to `POST` *YAML* configuration files over HTTPS. The desired state of the program is stored in these YAML files, which are also known as *manifests*. Many things are included in the intended state, such as the container image to use, the ports to expose, and the number of Pod clones to run. Authentication and authorisation checks are performed on all API Server calls, but once they are completed, the YAML file’s configuration is validated, persisted to the cluster store, and deployed to the cluster.
 #### Scheduler
