@@ -30,6 +30,7 @@ Privileged pods are pods with special permissions, which are useful for instance
 
 ### Kubernetes nodes
 A node is a simple server (physical or virtual machine). In each node you can have a maximum of N pods (usually around 250 pods).
+
 ### Kubernetes cluster
 A cluster is the set of all resources coordinated by a single K8s instance. In a cluster you can have a maximum of M clusters (usually around 5000 nodes).
 ### Kubernetes services

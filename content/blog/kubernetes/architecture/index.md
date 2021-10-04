@@ -13,19 +13,69 @@ The software architecture is depicted in the below picture.
 There are different types of components, 1) node components, which are components that must be installed and run on each node, and 2) k8s master component, which are component running on the master node.
 {{< figure src="images/architecturek8s.png" width="700" >}}
 ### Node components
+{{< figure src="images/2-k8sworker.jpg" width="700" >}}
 #### Container runtime
-First, for letting K8s work, a container runtime is needed, like Docker. This is because pods are basically abstractions for containers, and therefore a container runtime must be run on every node.
+The container runtime manages the entire container life-cycle. Kubernetes implements a **Container Runtime Interface** (*CRI*). which masks the internal machinery of Kubernetes and exposes a clean documented interface for 3rd-party
+container runtimes to plug into.There are lots of container runtimes
+available for Kubernetes, the most popular ones are **Docker**,
+**containerd**, and **CRI-O**.
+
 #### Kubelet
-Kubelet is the process internal to K8s, unlike the container runtime, which actually is in charge of scheduling the pods and the underneath containers. The kubelet has interfaces with the container runtime and the underneath node, so it is able to start the pod with a container inside. The kubelet process must run on every node.
+The kubelet is the main kubernetes agent which runs on each node of the cluster. The kubelet is in charge of registering the node with the cluster. The node’s CPU, memory, and storage are effectively pooled into the cluster pool after registration. One of the kubelet’s key responsibilities is to keep an eye on the API server for new work assignments. Whenever it sees one, the kubelet performs the task and maintains a reporting channel back to the control plane. If a kubelet is unable to complete a task, it informs the master and the control plane, which then decides what actions to take. For example, if a Kubelet is unable to complete a task, it is not responsible for locating another node on which to complete it: it just reports back to the control plane, which takes the final decision.
 #### Kube proxy
-Also this component must be installed on every node, and is responsible for forwarding requests from services to pods. Kube proxy has an intelligent forwarding logic inside, that make sure that the communication works in a performant way with low overhead.
+Kube-proxy runs on every node in the cluster and is responsible for local cluster networking. For example, it makes sure each node gets its own unique IP address, and implements local *IPTABLES* or *IPVS* rules to handle routing and load-balancing of traffic on the Pod network.
+
 ### Master components
-The master node has completely different processes running inside, needed to control the node state. To handle scalability, it is the case that more than one master component could be present.
+{{< figure src="images/2-k8smaster.jpg" width="700" >}}
+A Kubernetes master is a group of system services that make up the
+cluster’s control plane. All of the master services are executed on a
+single host in the simplest installations. However, this is only
+appropriate for use in laboratories and test situations. Multi-master
+high availability (HA) is a necessary in production applications. This
+is why major cloud providers like **Azure Kubernetes Service** (*AKS*),
+**AWS Elastic Kubernetes Service** (*EKS*), and **Google Kubernetes
+Engine** (*GKE*) include HA masters in their hosted Kubernetes systems .
+In general, in a *HA* arrangement, three or five replicated masters are
+suggested. The different master services that make up the control plane
+are the following
 #### API server
-When an application is deployed into a K8s cluster, it interacts with the API server, which can be the Kubernetes dashboard (UI) or the command line (kubectl). Therefore, the API server is like a cluster gateway, that acts also as a gatekeeper for authentication, ensuring that also authorized operation are performed on the cluster. Therefore, all requests are submitted to the API server, which is in charge of validating them and redirecting to the corresponding process which will handle them. This is a REST server which interacts with CRUD operations.
+All communication between Kubernetes components must occur through the API server. It has a RESTful API that can be used to `POST` *YAML* configuration files over HTTPS. The desired state of the program is stored in these YAML files, which are also known as *manifests*. Many things are included in the intended state, such as the container image to use, the ports to expose, and the number of Pod clones to run. Authentication and authorisation checks are performed on all API Server calls, but once they are completed, the YAML file’s configuration is validated, persisted to the cluster store, and deployed to the cluster.
 #### Scheduler
-Whenever a new pod is scheduled, the API server redirects to the Scheduler, which is in charge of actually start the application pod on one of the worker nodes. The scheduler has its own smart way of deciding on which node is good to schedule a given request, based on the resources needed by the application to schedule.
+The scheduler monitors the API server for new
+    work tasks and assigns them to healthy nodes that are available. It
+    uses complex logic behind the scenes to filter out nodes that aren’t
+    capable of completing the task and then rank the ones that are. The
+    task cannot be scheduled if the scheduler cannot find a suitable
+    node, and it is marked as pending. Beware that the scheduler isn’t
+    in charge of launching tasks; it’s just in charge of determining
+    which nodes a job will run on.
 #### Controller manager
-This component is needed when pods die on any node. The controller is in charge of detecting state changes and trying of recovering the desired condition.
+All of the background control loops that
+    monitor the cluster and respond to events are implemented by the
+    controller manager. It’s a “*controller of controllers*”, which
+    means it generates and monitors all of the independent control
+    loops. The **node controller**, **endpoints controller**, and
+    **replicaset controller** are examples of control loops. Each one
+    operates as a background watch-loop that monitors the API Server for
+    changes in order to guarantee that the cluster’s current state
+    matches the desired state.
+
+### Cloud controller manager
+Your control plane will be running
+    a cloud controller manager if the cluster is running on a supported
+    public cloud platform like *AWS*, *Azure*, *GCP*, and so on. Its job
+    is to oversee integrations with underlying cloud technologies and
+    services like instances, load balancers, and storage. If your
+    application requires an internet facing load balancer, for example,
+    the cloud controller manager is responsible for installing a
+    suitable load balancer on the cloud platform.
 #### Etcd
-It is the “cluster brain”, a fast key-value database which works on main memory containing all the resources active within the cluster.
+The cluster store is the control plane’s only
+stateful component, and it persistently saves the cluster’s entire
+configuration and state. At the moment, the cluster store is based
+on etcd, a popular distributed database. You should run between 3-5
+etcd copies for high-availability, and you should provide enough
+mechanisms to recover when things go wrong, as it is the cluster’s
+sole source of truth.
+
+
