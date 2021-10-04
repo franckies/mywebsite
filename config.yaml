@@ -153,49 +153,49 @@ params:
 ###################################################################
 ################## multilanguage support options ##################
 ###################################################################
-languages:
-  en:
-    languageName:       English
-    weight:             1
-  it:
-    languageName:       Italian
-    weight:             2
-    # When Specifying different parameters for a different language 
-    # you need to specify all the mandatory sub-parameters as well.
-    # E.g.: if you specify the "homepage" parameter then you need to
-    #       specify all mandatory sub-parameters, e.g.: "title". 
-    # See example below:
-    params:
-      homepage:
-        title: Francesco Semeraro
-        subtitle: Sito Web Personale - 🚧Work in progress🚧
-        image: "/images/avatar.png" # worker.svg 
-        imageWidth: 500px
+# languages:
+#   en:
+#     languageName:       English
+#     weight:             1
+#   it:
+#     languageName:       Italian
+#     weight:             2
+#     # When Specifying different parameters for a different language 
+#     # you need to specify all the mandatory sub-parameters as well.
+#     # E.g.: if you specify the "homepage" parameter then you need to
+#     #       specify all mandatory sub-parameters, e.g.: "title". 
+#     # See example below:
+#     params:
+#       homepage:
+#         title: Francesco Semeraro
+#         subtitle: Sito Web Personale
+#         image: "/images/avatar.png" # worker.svg 
+#         imageWidth: 500px
       
-      # Some sub-parameters of the "footer" parameter
-      # can be omitted because the code allows for them to be 
-      # missed but they will treated as they do not exist,
-      # i.e., the parameters of the default language
-      # won't be inherited.
-      footer:
-        logo: "/images/refresh-square.svg"
-        email: 
-          link: fk.semeraro@gmail.com
-          title: Email
-        linkedin: 
-          link: in/francesco-semeraro-09b305190
-          title: LinkedIn
-        # facebook: 
-        #   link: your.username
-        #   title: Facebook 
-        # twitter: 
-        #   link: username
-        #   title: Twitter
-        # instagram: 
-        #   link: username
-        #   title: Instagram
-        github: 
-            link: franckies
-            title: Github
-        copyright: FS - 2020
+#       # Some sub-parameters of the "footer" parameter
+#       # can be omitted because the code allows for them to be 
+#       # missed but they will treated as they do not exist,
+#       # i.e., the parameters of the default language
+#       # won't be inherited.
+#       footer:
+#         logo: "/images/refresh-square.svg"
+#         email: 
+#           link: fk.semeraro@gmail.com
+#           title: Email
+#         linkedin: 
+#           link: in/francesco-semeraro-09b305190
+#           title: LinkedIn
+#         # facebook: 
+#         #   link: your.username
+#         #   title: Facebook 
+#         # twitter: 
+#         #   link: username
+#         #   title: Twitter
+#         # instagram: 
+#         #   link: username
+#         #   title: Instagram
+#         github: 
+#             link: franckies
+#             title: Github
+#         copyright: FS - 2020
       

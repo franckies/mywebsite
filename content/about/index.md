@@ -6,15 +6,16 @@ hideLastModified: true
 showInMenu: true
 # no need for the "summary" parameter as it is not displayed in any previews
 ---
-{{< figure src="images/resized.jpg" width="500" >}}
+{{< figure src="images/resized-modified.png" width="500" >}}
 I am a Cloud Engineer at [Reply](https://www.reply.com/cluster-reply/en/), in Milan (IT) working mainly on Microsoft technologies.
 I completed my Master's degree in 2020 at Politecnico di Milano. My research thesis was supervised by Prof. Sergio M. 
 Savaresi and covered a practical implementation of Augmented Reality in the automotive field using Head Mounted Displays. 
 I'm currently enrolled in the 2nd level Master specialization in AI & Cloud at Politecnico di Torino.
 
 ## Interests
-{{< title6 "Spatial Computing" >}} {{< title6 "Cloud Computing" >}} {{< title6 "Azure" >}}  {{< title6 "Artificial Intelligence" >}} 
-{{< title6 "DevOps" >}} {{< title6 "Coding" >}} 
+ {{< title6 "Cloud Computing" >}} {{< title6 "Azure" >}} {{< title6 "Kubernetes" >}} {{< title6 "Linux" >}} {{< title6 "Virtualization" >}}
+  {{< title6 "Artificial Intelligence" >}} 
+{{< title6 "DevOps" >}} {{< title6 "Coding" >}}  {{< title6 "Spatial Computing" >}}
 
 ## Work Experience
 {{< book title="Cloud engineer" authors="Reply, Jan 2021 - Present" image="images/reply.jpg" size="300x" >}}
@@ -39,5 +40,12 @@ The cloud specialisation explores the main components that characterise IaaS and
 **Relevant courses**: Software engineering, databases and information systems, operating systems, telecommunication networks.
 {{< /book >}}
 
+## Exams and certifications
+{{< book title="AZ-303 Microsoft Azure Architect Technologies" authors="Microsoft, Sept 2021" image="images/az303.png" size="300x" >}}
+{{< /book >}}
+{{< book title="Microsoft Certified: Azure Administrator Associate" authors="Microsoft, Sept 2021" image="images/az104.png" size="300x" >}}
+{{< /book >}}
+{{< book title="AWS Fundamentals: Building Serverless Applications" authors="Amazon Web Services, Oct 2020" image="images/aws.png" size="300x" >}}
+{{< /book >}}
 ## Publications
 1. **Teaching Internet of Things using a Raspberry PI based RC-car**, Pavol Bistack, Reza Moezzi, Giuseppina Nicassio, Francesco Semeraro. IEEE - 2020. 
