@@ -35,8 +35,8 @@ A node is a simple server (physical or virtual machine). In each node you can ha
 A cluster is the set of all resources coordinated by a single K8s instance. In a cluster you can have a maximum of M clusters (usually around 5000 nodes).
 ### Kubernetes services
 A service is an abstraction having a permanent IP address, and it is associated to a given pod. Lifecycles of pods and services are not connected, so when a pod dies, the service will continue living with its permanent IP. There are two types of services:
-- External service: are services that can expose a pod to internet
-- Internal service: are services which are used only for inter-pod communication, and do not expose the pod to internet. This is useful for databases.
+-   External service: are services that can expose a pod to internet
+-   Internal service: are services which are used only for inter-pod communication, and do not expose the pod to internet. This is useful for databases.
 
 There are 4 types of services.
 

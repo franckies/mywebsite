@@ -25,15 +25,15 @@ communication (i.e. simple method invocation or IPC).
 # Architecture
 The web application is composed of the following microservices:
 
-- CatalogService: customers and admins interact only
+-   CatalogService: customers and admins interact only
     with thisμS that forwards the requests to the internal
     facilities;
-- OrderService: responsible for handling the order workflow and confirming it when all the conditions are
+-   OrderService: responsible for handling the order workflow and confirming it when all the conditions are
     satisfied (i.e. money and products availability);
-- WalletService: handles the information about customers’
+-   WalletService: handles the information about customers’
     money and transactions;
-- WarehouseService: handles the products in any warehouse and it is in charge of picking up the items;
-- MailingService: handles the mailing information for
+-   WarehouseService: handles the products in any warehouse and it is in charge of picking up the items;
+-   MailingService: handles the mailing information for
     updating customers and admins about the orders.
 
 This figure explains the data responsibility (i.e. which piece of
@@ -44,13 +44,13 @@ the components.
 
 All the functional requirements and their high-level implementation are depicted in the above picture. Three actors can be defined:
 
-- Anonymous reader: represents a non-authenticated
+-   Anonymous reader: represents a non-authenticated
     user, which canquery the catalog(1) and retrieve a
     list of all the available products together with their price,
     quantity, description, picture, and category. Technically,
     this is done through a GET request on the specific endpoint exposed by the CatalogService, which in turn performs a GET request on an endpoint exposed by the WarehouseService, which is in charge of storing products’ information.
 
-- Customer: represents an authenticated customer, extending the requirements already available for an anonymous reader. A customer can login(2) using his own
+-   Customer: represents an authenticated customer, extending the requirements already available for an anonymous reader. A customer can login(2) using his own
     credentials. A convenient way to handle the authentication mechanism is to store in-memory users. He can
     submit a request tocreate an order(3). This operation comes in two different flavours:synchronousand
     asynchronous. In both cases, two main controls have
@@ -74,7 +74,7 @@ All the functional requirements and their high-level implementation are depicted
     a customer can query his own wallet (6), to verify
     the remaining amount of money and all the performed
     transactions.
-- Admin: represents a user authenticated as a system
+-   Admin: represents a user authenticated as a system
     administrator, extending the requirements already available for an anonymous reader. As for the customer,
     the admin can login (7) exploiting the same in-
     memory user management system. An admin can also

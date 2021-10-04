@@ -1,6 +1,6 @@
 ---
 title: "Docker basics"
-date: 2021-10-04T21:55:06+01:00
+date: 2021-04-04T21:55:06+01:00
 draft: false
 hideLastModified: true
 summaryImage: "images/docker.png"
