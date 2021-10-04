@@ -6,7 +6,7 @@ hideLastModified: true
 summaryImage: "images/docker.png"
 keepImageRatio: true
 tags: ["docker"]
-summary: "Short overview of Docker resources"
+summary: "Short overview of Docker resources."
 ---
 The core components that compose Docker will now be briefly explained.
 
