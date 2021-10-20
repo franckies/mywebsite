@@ -18,6 +18,19 @@ Terraform allows you to safely provision and manage multi-cloud infrastructure a
 Terraform allows us to declare configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned. Using Infrastructure as Code, we can consistently provision your infrastructure. 
 
 # The infrastructure
+## The infrastructure
+Independently on the CSP, the infrastructure under study is an high available *3-tier web application*, consisting of:
+- A frontend layer, hosting the a web page with which the user can interact. The frontend layer simply consists of a button showing a counter that is increased at each press.
+- A serverless backend layer, hosting the web application logic. In this case, the backend consists of a serverless function which is in charge of reading and writing the counter value from/to the database. The fontend layer can interact with the backend layer through a REST API using the READ method, to read the counter value from the database, or the POST method, to write the counter value to the database.
+- A non-relational _managed database service_, which interacts with the backend layer.
+
+The architecture is intended to be an *closed layered architecture*, i.e. each layer can interact only with the layer just below it. 
+
+For both CSPs, the infrastructure has been designed to be highly available, exploiting the concepts of _automatic scaling out_ the frontend servers, which are connected to a load balancer exposing the service to the internet. Moreover, the servers are split on two different _availability zone_ eliminating downtime due to zone-wide failures. 
+
+{{< figure src="images/infrastructure.png" width="200" >}}
+
+# The application
 Terraform is not a configuration management tool, but for simple scenarios it can be used also to provision an application deploying it on top of the infrastructure. In this case, being the presented application a simple web application, the deploy has been done:
 -   For the frontend part, exploiting the possibility of the CSP to provision a bootstrap script to the frontend VMs cluster, in which our web application frontend is cloned by github and installed together with Apache2.
 -   For the backend part, the serverless function code is zipped and deployed to the function directly using terraform functionalities.
@@ -30,79 +43,6 @@ A simple _use case_ diagram for the application can be found below.
 
 {{< figure src="images/uc-application.png" width="400" >}}
 
-# The application
-Terraform is not a configuration management tool, but for simple scenarios it can be used also to provision an application deploying it on top of the infrastructure. In this case, being the presented application a simple web application, the deploy has been done:
--   For the frontend part, exploiting the possibility of the CSP to provision a bootstrap script to the frontend VMs cluster, in which our web application frontend is cloned by github and installed together with Apache2.
--   For the backend part, the serverless function code is zipped and deployed to the function directly using terraform functionalities.
-
-The web application simply consists of a fancy button, colored in blue for Azure and in orange for Aws, which displays a counter that is incremented each time the button is pressed. Behind the hood, the frontend javascript executes REST calls to the backend serverless function, which is in charge of actually increasing the counter value and storing it into a managed database. 
-
-# Project structure
-```
-├── aws
-│   ├── main.tf
-│   ├── modules
-│   │   ├── backend
-│   │   │   ├── api-gateway.tf
-│   │   │   ├── backend-app
-│   │   │   │   └─ ...
-│   │   │   ├── backend-app.zip
-│   │   │   ├── backend-out.tf
-│   │   │   ├── backend-vars.tf
-│   │   │   └── lambda.tf
-│   │   ├── data
-│   │   │   ├── data-out.tf
-│   │   │   ├── data-vars.tf
-│   │   │   └── dynamo-db.tf
-│   │   ├── frontend
-│   │   │   ├── autoscaling-group.tf
-│   │   │   ├── bastion.tf
-│   │   │   ├── external-lb.tf
-│   │   │   ├── frontend-app
-│   │   │   │   └─ ...
-│   │   │   ├── frontend-out.tf
-│   │   │   ├── frontend-vars.tf
-│   │   │   └── user-data.sh.tpl
-│   │   └── networking
-│   │       ├── networking-out.tf
-│   │       ├── networking-vars.tf
-│   │       └── vpc.tf
-│   └── variables.tf
-├── azure
-│   ├── main.tf
-│   ├── modules
-│   │   ├── backend
-│   │   │   ├── api-management.tf
-│   │   │   ├── backend-app
-│   │   │   │   └─ ...
-│   │   │   ├── backend-app.zip
-│   │   │   ├── backend-out.tf
-│   │   │   ├── backend-vars.tf
-│   │   │   └── function-app.tf
-│   │   ├── data
-│   │   │   ├── cosmo-db.tf
-│   │   │   ├── data-out.tf
-│   │   │   └── data-vars.tf
-│   │   ├── frontend
-│   │   │   ├── bastion.tf
-│   │   │   ├── external-lb.tf
-│   │   │   ├── frontend-app
-│   │   │   │   └─ ...
-│   │   │   ├── frontend-out.tf
-│   │   │   ├── frontend-vars.tf
-│   │   │   ├── scale-set.tf
-│   │   │   └── user-data.sh.tpl
-│   │   └── networking
-│   │       ├── networking-out.tf
-│   │       ├── networking-vars.tf
-│   │       └── vnet.tf
-│   └── variables.tf
-├── images
-│   └─ ...
-├── main.tf
-├── terraform.tfvars
-└── variables.tf
-```
 # AWS
 In this section, the services used in the AWS infrastructure will be presented.
 ### Networking
@@ -186,3 +126,71 @@ Aws button interface          |  Azure button interface
 ![](./images/awsbutton.jpg)  |  ![](./images/azurebutton.jpg)
 
 
+# Project structure
+To give some hints on how to organize a terraform project in modules following the suggested best practices, here is the project structure in terms of folders and files:
+
+```
+├── aws
+│   ├── main.tf
+│   ├── modules
+│   │   ├── backend
+│   │   │   ├── api-gateway.tf
+│   │   │   ├── backend-app
+│   │   │   │   └─ ...
+│   │   │   ├── backend-app.zip
+│   │   │   ├── backend-out.tf
+│   │   │   ├── backend-vars.tf
+│   │   │   └── lambda.tf
+│   │   ├── data
+│   │   │   ├── data-out.tf
+│   │   │   ├── data-vars.tf
+│   │   │   └── dynamo-db.tf
+│   │   ├── frontend
+│   │   │   ├── autoscaling-group.tf
+│   │   │   ├── bastion.tf
+│   │   │   ├── external-lb.tf
+│   │   │   ├── frontend-app
+│   │   │   │   └─ ...
+│   │   │   ├── frontend-out.tf
+│   │   │   ├── frontend-vars.tf
+│   │   │   └── user-data.sh.tpl
+│   │   └── networking
+│   │       ├── networking-out.tf
+│   │       ├── networking-vars.tf
+│   │       └── vpc.tf
+│   └── variables.tf
+├── azure
+│   ├── main.tf
+│   ├── modules
+│   │   ├── backend
+│   │   │   ├── api-management.tf
+│   │   │   ├── backend-app
+│   │   │   │   └─ ...
+│   │   │   ├── backend-app.zip
+│   │   │   ├── backend-out.tf
+│   │   │   ├── backend-vars.tf
+│   │   │   └── function-app.tf
+│   │   ├── data
+│   │   │   ├── cosmo-db.tf
+│   │   │   ├── data-out.tf
+│   │   │   └── data-vars.tf
+│   │   ├── frontend
+│   │   │   ├── bastion.tf
+│   │   │   ├── external-lb.tf
+│   │   │   ├── frontend-app
+│   │   │   │   └─ ...
+│   │   │   ├── frontend-out.tf
+│   │   │   ├── frontend-vars.tf
+│   │   │   ├── scale-set.tf
+│   │   │   └── user-data.sh.tpl
+│   │   └── networking
+│   │       ├── networking-out.tf
+│   │       ├── networking-vars.tf
+│   │       └── vnet.tf
+│   └── variables.tf
+├── images
+│   └─ ...
+├── main.tf
+├── terraform.tfvars
+└── variables.tf
+```
