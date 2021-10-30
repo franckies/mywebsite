@@ -13,7 +13,7 @@ As a cloud engineer at Cluster Reply, the reply company focused on implementing 
 on Microsoft Azure, I work with my team to build scalable and secure cloud, multi cloud and hybrid 
 infrastructures for our customers. Within my team, I’m particularly focused on designing and implementing 
 infrastructures based on Docker containers and Kubernetes clusters, using the DevOps approach enabled 
-by IaaC (ARM, Terraform) and  the paradigm of serverless development. 
+by IaC (ARM, Terraform) and  the paradigm of serverless development. 
 
 I completed my Master's degree in 2020 at Politecnico di Milano. My research thesis was supervised by Prof. Sergio M. 
 Savaresi and covered a practical implementation of Augmented Reality in the automotive field using Head Mounted Displays. 
