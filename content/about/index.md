@@ -9,7 +9,7 @@ showInMenu: true
 {{< figure src="images/resized-modified.png" width="500" >}}
 
 I am a Cloud Engineer at [Reply](https://www.reply.com/cluster-reply/en/), in Milan (IT). 
-As a cloud engineer at Cluster Reply, the reply company focused on implementing solutions based 
+As a Cloud Engineer at Cluster Reply, the Reply company focused on implementing solutions based 
 on Microsoft Azure, I work with my team to build scalable and secure cloud, multi cloud and hybrid 
 infrastructures for our customers. Within my team, I’m particularly focused on designing and implementing 
 infrastructures based on Docker containers and Kubernetes clusters, using the DevOps approach enabled 
