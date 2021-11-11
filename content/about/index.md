@@ -7,10 +7,17 @@ showInMenu: true
 # no need for the "summary" parameter as it is not displayed in any previews
 ---
 {{< figure src="images/resized-modified.png" width="500" >}}
-I am a Cloud Engineer at [Reply](https://www.reply.com/cluster-reply/en/), in Milan (IT) working mainly on Microsoft technologies.
-I completed my Master's degree in 2020 at Politecnico di Milano. My research thesis was supervised by Prof. Sergio M. 
+
+I am a Cloud Engineer at [Reply](https://www.reply.com/cluster-reply/en/), in Milan (IT). 
+As a Cloud Engineer at Cluster Reply, the Reply company focused on implementing solutions based 
+on Microsoft Azure, I work with my team to build scalable and secure cloud, multi cloud and hybrid 
+infrastructures for our customers. Within my team, I’m particularly focused on designing and implementing 
+infrastructures based on Docker containers and Kubernetes clusters, using the DevOps approach enabled 
+by IaC (ARM, Terraform) and  the paradigm of serverless development. 
+
+I completed my Master's degree in 2020 at [Politecnico di Milano](https://www.polimi.it/). My research thesis was supervised by Prof. Sergio M. 
 Savaresi and covered a practical implementation of Augmented Reality in the automotive field using Head Mounted Displays. 
-I'm currently enrolled in the 2nd level Master specialization in AI & Cloud at Politecnico di Torino.
+I'm currently enrolled in the 2nd level Master specialization in AI & Cloud at [Politecnico di Torino](https://www.polito.it/).
 
 ## Interests
  {{< title6 "Cloud Computing" >}} {{< title6 "Azure" >}} {{< title6 "Kubernetes" >}} {{< title6 "Linux" >}} {{< title6 "Virtualization" >}}
