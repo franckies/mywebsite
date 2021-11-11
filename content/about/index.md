@@ -41,7 +41,7 @@ The cloud specialisation explores the main components that characterise IaaS and
 {{< /book >}}
 
 ## Exams and certifications
-{{< book title="AZ-303 Microsoft Azure Architect Technologies" authors="Microsoft, Sept 2021" image="images/az303.png" size="300x" >}}
+{{< book title="Microsoft Certified: Azure Solutions Architect Expert" authors="Microsoft, Nov 2021" image="images/az303304.png" size="300x" >}}
 {{< /book >}}
 {{< book title="Microsoft Certified: Azure Administrator Associate" authors="Microsoft, Sept 2021" image="images/az104.png" size="300x" >}}
 {{< /book >}}
