@@ -1,7 +1,7 @@
 ---
 title: "API Management in Hybrid Cloud scenarios"
 date: 2021-12-14T21:55:06+01:00
-draft: true
+draft: false
 hideLastModified: true
 summaryImage: "images/cover.png"
 keepImageRatio: true
