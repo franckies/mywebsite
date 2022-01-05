@@ -4,6 +4,7 @@ date: 2019-06-17T23:53:00+01:00
 draft: false
 hideLastModified: true
 showInMenu: true
+weight: 5
 # no need for the "summary" parameter as it is not displayed in any previews
 ---
 {{< figure src="images/resized-modified.png" width="500" >}}
@@ -15,9 +16,7 @@ infrastructures for our customers. Within my team, I’m particularly focused on
 infrastructures based on Docker containers and Kubernetes clusters, using the DevOps approach enabled 
 by IaC (ARM, Terraform) and  the paradigm of serverless development. 
 
-I completed my Master's degree in 2020 at [Politecnico di Milano](https://www.polimi.it/). My research thesis was supervised by Prof. Sergio M. 
-Savaresi and covered a practical implementation of Augmented Reality in the automotive field using Head Mounted Displays. 
-I'm currently enrolled in the 2nd level Master specialization in AI & Cloud at [Politecnico di Torino](https://www.polito.it/).
+I hold a Master’s Degree in Computer Science and Engineering from [Politecnico di Milano](https://www.polimi.it/), and a Specializing Master’s Degree in Artificial Intelligence and Cloud from [Politecnico di Torino](https://www.polito.it/).
 
 ## Interests
  {{< title6 "Cloud Computing" >}} {{< title6 "Azure" >}} {{< title6 "Kubernetes" >}} {{< title6 "Linux" >}} {{< title6 "Virtualization" >}}
@@ -35,11 +34,12 @@ Master's thesis at [mOve research lab](https://www.move.deib.polimi.it/) in coll
 
 ## Education
 {{< book title="2nd level Master's degree, Artificial Intelligence & Cloud" authors="Politecnico di Torino, Jan 2021 - Present" image="images/polito.png" size="300x" >}}
-The Master’s Programme illustrates how to concretely use modern digital technologies, from effective data management to the adoption of Artificial Intelligence and Machine Learning techniques, all through the most recent implementation models on the Cloud.
-The cloud specialisation explores the main components that characterise IaaS and PaaS solutions on the four main cloud service providers (Azure, Aws, GCP and Oracle Cloud). Throughout the deep dive on CSPs, particular emphasis is laid on the Devops approach and Infrastructure as Code, microservice-based architectures using containerization (Docker, Kubernetes, OpenShift) and serverless development.
+The Master’s Programme illustrates how to concretely use modern digital technologies, from the main components that characterise IaaS and PaaS solutions on Azure, Aws, GCP and Oracle Cloud, to the Devops approach and Infrastructure as Code, microservice-based architectures using containerization (Docker, Kubernetes, OpenShift) and serverless development. \
+**Final dissertation**: API Management in the context of Hybrid Cloud.
 {{< /book >}}
 {{< book title="Master's degree, Computer science and engineering" authors="Politecnico di Milano, Sept 2018 - Dec 2020" image="images/polimi.png" size="300x" >}}
-**Relevant courses**: Computing infrastructures, model identification and data analysis, image analysis and computer vision, artificial intelligence.
+The programme covers the full spectrum of computer science applications, from Artificial Intelligence and Machine Learning to Big Data and data science, software engineering for complex systems, internet engineering and cyber security. \
+**Final dissertation**: Real-time implementation of an Augmented Reality ADAS for Head-Mounted Displays
 {{< /book >}}
 {{< book title="Erasmus program" authors="Slovak University of Technology, Sept 2019- Jan 2020" image="images/stu.png" size="300x" >}}
 {{< /book >}}
@@ -54,5 +54,6 @@ The cloud specialisation explores the main components that characterise IaaS and
 {{< /book >}}
 {{< book title="AWS Fundamentals: Building Serverless Applications" authors="Amazon Web Services, Oct 2020" image="images/aws.png" size="300x" >}}
 {{< /book >}}
+
 ## Publications
 1. **Teaching Internet of Things using a Raspberry PI based RC-car**, Pavol Bistack, Reza Moezzi, Giuseppina Nicassio, Francesco Semeraro. IEEE - 2020. 
