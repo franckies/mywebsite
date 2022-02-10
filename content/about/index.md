@@ -9,12 +9,9 @@ weight: 5
 ---
 {{< figure src="images/resized-modified.png" width="500" >}}
 
-I am a Cloud Engineer at [Reply](https://www.reply.com/cluster-reply/en/), in Milan (IT). 
-As a Cloud Engineer at Cluster Reply, the Reply company focused on implementing solutions based 
-on Microsoft Azure, I work with my team to build scalable and secure cloud, multi cloud and hybrid 
-infrastructures for our customers. Within my team, I’m particularly focused on designing and implementing 
-infrastructures based on Docker containers and Kubernetes clusters, using the DevOps approach enabled 
-by IaC (ARM, Terraform) and  the paradigm of serverless development. 
+Enthusiastic learner, team player and trustworthy with a deep understanding of IaaS and PaaS cloud services, including security, networking, storage and identity management. I have always been passionate about technology, innovation and I love challenges.
+
+I currently work as Cloud Engineer at [Reply](https://www.reply.com/cluster-reply/en/), in Milan (IT). 
 
 I hold a Master’s Degree in Computer Science and Engineering from [Politecnico di Milano](https://www.polimi.it/), and a Specializing Master’s Degree in Artificial Intelligence and Cloud from [Politecnico di Torino](https://www.polito.it/).
 
@@ -25,11 +22,14 @@ I hold a Master’s Degree in Computer Science and Engineering from [Politecnico
 
 ## Work Experience
 {{< book title="Cloud engineer" authors="Reply, Jan 2021 - Present" image="images/reply.jpg" size="300x" >}}
-
+– Designing and implementing cloud, multi-cloud and hybrid infrastructures for enterprise level customers with a focus on modern technologies (Docker container, Kubernetes clusters, DevOps approach and Infrastructure as Code). \
+– Designing and implementing microservices architectures (both infrastructure and application development using .NET core) based on serverless functions. \
+– Translating customers’ needs into technical requirements, planning and carrying on complex projects collaborating in teams of Cloud / DevOps engineers.
 {{< /book >}}
+
 {{< book title="Undergraduate Research Fellow" authors="Politecnico di Milano, Feb 2020 - Dec 2020" image="images/polimi.png" size="300x" >}}
-Master's thesis at [mOve research lab](https://www.move.deib.polimi.it/) in collaboration with Maserati.\
-**Research topic**: Real-time implementation of an Augmented Reality ADAS for Head-Mounted Displays.
+Research fellow at [mOve research lab](https://www.move.deib.polimi.it/) in collaboration with Maserati. \
+– Designed and developed a real-time ADAS application for Head-Mounted Displays using Unity 3D, Java, C# and HoloLens.
 {{< /book >}}
 
 ## Education
@@ -48,6 +48,8 @@ The programme covers the full spectrum of computer science applications, from Ar
 {{< /book >}}
 
 ## Exams and certifications
+{{< book title="HashiCorp Certified: Terraform Associate" authors="HashiCorp, Feb 2022" image="images/terraform.png" size="300x" >}}
+{{< /book >}}
 {{< book title="Microsoft Certified: Azure Solutions Architect Expert" authors="Microsoft, Nov 2021" image="images/az303304.png" size="300x" >}}
 {{< /book >}}
 {{< book title="Microsoft Certified: Azure Administrator Associate" authors="Microsoft, Sept 2021" image="images/az104.png" size="300x" >}}
