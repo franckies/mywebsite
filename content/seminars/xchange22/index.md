@@ -19,3 +19,8 @@ Today, hybrid and multicloud scenarios are critical for many organizations. Runn
 In this session, we will present you the new multicloud management solution developed by Microsoft called Azure Arc. With Azure Arc, the management capabilities offered by Azure cloud are extended to environments outside Azure cloud, offering a single control plane for multicloud scenarios.  
 
 This allows your organization to build consistent hybrid and multicloud architectures, as well as enabling cloud-native resources to be deployed anywhere with Arc-enabled Kubernetes clusters. 
+
+![speech](./images/pic1.jpg)
+
+
+![xchange](./images/pic2.jpg)
