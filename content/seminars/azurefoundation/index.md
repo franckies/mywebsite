@@ -8,7 +8,7 @@ keepImageRatio: true
 tags: ["azure", "cloud", "multicloud"]
 summary: "Adopt Azure Arc to simplify the management of your multicloud infrastructure and enable Azure PaaS and serverless on any Kubernetes cluster. "
 ---
-# Azure foundation course
+# Empower your multicloud infrastructure using Azure Arc
 ***Speakers***: Francesco Semeraro, Paolo Vicco [Cluster Azure Reply](https://www.reply.com/cluster-reply/en/).
 
 ***When***: 06-07-2022.
