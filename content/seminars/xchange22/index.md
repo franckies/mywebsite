@@ -13,6 +13,8 @@ summary: "Adopt Azure Arc to simplify the management of your multicloud infrastr
 
 ***When***: 06-07-2022.
 
+***Registration***: https://xchange.reply.com/detail/4b2c4468-889a-4dbe-87f5-c08b6bf9ecd2
+
 ## Abstract
 Today, hybrid and multicloud scenarios are critical for many organizations. Running in multicloud environments not only adds more complexity, but also often leads to an increase in operating costs and challenges when it comes to governance and compliance.  
 
