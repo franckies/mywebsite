@@ -1,6 +1,6 @@
 ---
 title: "About Me"
-date: 2022-12-23T23:53:00+01:00
+date: 2022-12-20T00:00:00+01:00
 draft: false
 hideLastModified: true
 showInMenu: true
