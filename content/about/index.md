@@ -9,11 +9,12 @@ weight: 5
 ---
 {{< figure src="images/resized-modified.png" width="500" >}}
 
-As a Cloud/DevOps Engineer, I have a strong background in designing and implementing advanced infrastructure solutions for enterprise level customers. My expertise includes using modern technologies to deliver scalable, reliable, and cost-effective systems. In addition to my technical skills, I am a strong collaborator and excel at working with cross-functional teams to plan and execute complex projects. I have a proven track record of working with customers to understand their needs and translate them into technical requirements.
+
+Enthusiastic learner, team player and trustworthy with a deep understanding of IaaS and PaaS cloud services, including security, networking, storage and identity management. I am passionate about using my skills and knowledge to help organizations leverage the power of the cloud to achieve their business goals.
 
 I hold a Master's degree in Computer Science and Engineering from [Politecnico di Milano](https://www.polimi.it/), as well as a specialization in Artificial Intelligence and Cloud from [Politecnico di Torino](https://www.polito.it/).
 
-In my current role at [Reply](https://www.reply.com/cluster-reply/en/) in Milan (IT), I am dedicated to delivering high-quality solutions and constantly improving my skills and knowledge. I am passionate about using my skills and knowledge to help organizations leverage the power of the cloud to achieve their business goals.
+In my current role at [Reply](https://www.reply.com/cluster-reply/en/) in Milan (IT), I am dedicated to delivering high-quality cloud solutions with a focus on modern digital technologies. 
 
 ## Interests
  {{< title6 "Cloud Computing" >}} {{< title6 "Azure" >}} {{< title6 "Kubernetes" >}} {{< title6 "Linux" >}} {{< title6 "Virtualization" >}}
