@@ -7,4 +7,4 @@ hideLastModified: true
 ---
 
 The website is built on top of the hugo theme https://github.com/PippoRJ/hugo-refresh.
-The avatar in the site comes from https://getavataaars.com/.
+The avatar in the site comes from https://getavataaars.com/ and https://dawnai.app/.
