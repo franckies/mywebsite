@@ -1,6 +1,6 @@
 ---
 title: "Kubernetes Core Concepts"
-date: 2023-03-26T16:02:06+01:00
+date: 2023-03-26T01:02:06+01:00
 draft: false
 hideLastModified: true
 summaryImage: "images/architecture.jpg"
