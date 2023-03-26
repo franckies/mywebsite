@@ -5,8 +5,8 @@ draft: false
 hideLastModified: true
 summaryImage: "images/architecture.jpg"
 keepImageRatio: true
-tags: ["docker"]
-summary: "Docker key principles and functionalities."
+tags: ["kubernetes"]
+summary: "Kubernetes core concepts and architecture."
 ---
 
 # Kubernetes architecture
