@@ -22,7 +22,11 @@ In my current role at [Reply](https://www.reply.com/cluster-reply/en/) in Milan 
 {{< title6 "DevOps" >}} {{< title6 "Coding" >}}  {{< title6 "Spatial Computing" >}}
 
 ## Work Experience
-{{< book title="Cloud engineer" authors="Reply, Jan 2021 - Present" image="images/reply.jpg" size="300x" >}}
+{{< book title="Senior Cloud engineer" authors="Reply, Jan 2023 - Present" image="images/reply.jpg" size="300x" >}}
+As a Senior Cloud Engineer, I lead a team of 6 Cloud and DevOps Engineers in the development and implementation of cloud-native infrastructures and applications. My expertise in serverless architectures, Kubernetes, and containerization enables me to design and deploy scalable and secure cloud-based solutions for our customers.
+{{< /book >}}
+
+{{< book title="Cloud engineer" authors="Reply, Jan 2021 - Jan 2023" image="images/reply.jpg" size="300x" >}}
 As a Cloud/DevOps Engineer, I have a strong track record of designing and implementing advanced infrastructure solutions for enterprise level customers. This includes using modern technologies such as Docker containers, Kubernetes clusters, and Infrastructure as Code to deliver scalable, reliable, and cost-effective systems. I am also skilled in designing and implementing microservices architectures, utilizing serverless functions and .NET core to deliver agile and flexible application development. In my role, I work closely with customers to understand their needs and translate them into technical requirements. I excel at collaborating in teams to plan and execute complex projects.
 {{< /book >}}
 
