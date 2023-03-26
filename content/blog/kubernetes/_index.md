@@ -5,4 +5,5 @@ draft: false
 summaryImage: "k8s.png"
 keepImageRatio: true
 showInMenu: false
+summary: "Notes for the CKA course. Most of the content comes from https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/"
 ---
