@@ -300,6 +300,7 @@ image from Docker Hub, and will assign the name "nginx" to the POD. You can then
 kubectl get pods
 ```
 ![getpo](./images/getpo.png)
+
 At this moment, the POD is only reachable within the cluster using its **Cluster IP**. We will then see how to deploy a Kubernetes service to make the POD reachable from outside the cluster.
 
 Instead of using the _imperative_ way by running ```kubectl run```, we can also use the _declarative_ way by defining a YAML manifest describing the POD specification and ```POST```ing it to the Kubernetes API server by means of the ```kubectl apply``` command.
@@ -590,14 +591,18 @@ spec:
 # Services
 Kubernetes services enable communication between various components within and outside an application, and help connect application together and other applications to users.
 There are different types of Kubernetes services:
+
 ![services](./images/services.jpg)
+
 - **Nodeport**: the service makes an internal POD accessible on a given port on each Kubernetes node.
 - **ClusterIP**: the service creates a virtual IP within the cluster for internal communication.
 - **LoadBalancer**: it provisions a load balancer for the Kubernetes services in supported cloud providers (Azure, Aws, GCP, etc.).
 
 ## NodePort
 The **nodeport** service maps a port on the Kubernetes nodes with a port on the POD running inside the cluster.
+
 ![nodeport](./images/nodeport.jpg)
+
 In this scenario, we have different definitions:
 - The _nodeport_ is the port of the Kubernetes node where the service can be reached. The nodeport can be in the range 30000-32767.
 - The _targetport_ is the port which the service maps on the POD.
@@ -627,7 +632,9 @@ The load is distributed in a random fashion using the principle of *session affi
 ## Cluster IP
 Usually an application is composed by different layers, a frontend, a backend and a data layer. PODs in different layers need to communicate with each other. To do this, they cannot use the IP assigned to the POD itself, since this IP is _ephemeral_ and will be changed each time the POD is restarted for some reasons.
 Therefore, the **cluster-ip** service provides PODs (or deployments) with a stable internal IP to allow inter PODs communication.
+
 ![clusterip](./images/clusterip.jpg)
+
 A cluster-ip service is defined as follows:
 ```
 cluster-ip-definition.yaml

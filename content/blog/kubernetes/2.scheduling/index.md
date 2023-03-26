@@ -3,10 +3,10 @@ title: "Kubernetes Scheduling"
 date: 2023-03-26T02:02:06+01:00
 draft: false
 hideLastModified: true
-summaryImage: "images/taintsandaffinity.jpg"
+summaryImage: "images/tanintsandaffinity.jpg"
 keepImageRatio: true
 tags: ["kubernetes"]
-summary: "Kubernetes resource scheduling."
+summary: "Kubernetes scheduling principles."
 ---
 
 # Manual scheduling
@@ -248,7 +248,8 @@ Suppose we want to schedule only red pods on red nodes, blue pods on blue nodes 
 - If we just use affinity, then it is not guaranteed that a pod without any label will not be scheduled on a red node.
 
 Therefore, using a combination of the two, we can taint each node with its color and assign to each pod a label with its own color. Then, we set node affinity on each pod to specify that a given pod can be only scheduled on a node having a given label.
-![](./images/tanintsandaffinity.jpg)
+
+![taints](./images/tanintsandaffinity.jpg)
 
 # Resources requests and limits
 Whenever a POD is scheduled on a node, it consumes the resources of that specific node. The scheduler decides in which node a POD should go based on the fact that the node has sufficient resources to host the node. If any node has enough resources, then Kubernetes will not schedule the POD, writing in the events _"Insufficient CPU"_. 
@@ -413,6 +414,7 @@ This can be done as follows:
 - Place definition files of control plane components (api server, etc.) in the designated folder
 - Kubelet will take care of setting up the control plane components as static pods, and also to restarts them in case of failures.
 
+
 # Multiple scheduler
 What if you had an application which requires that some checks have to be performed before scheduling it on a given node?
 In order to do so, it is possible to write an deploy to Kubernetes a custom scheduler, setting it as the default scheduler or as an additional scheduler to the default one.
@@ -435,4 +437,3 @@ You can use the
 kubectl get events
 ```
 command to see all the events in the current namespace, including the scheduling events and the source (scheduler) starting it.
-
