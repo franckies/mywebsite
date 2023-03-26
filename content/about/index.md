@@ -17,9 +17,9 @@ I hold a Master's degree in Computer Science and Engineering from [Politecnico d
 In my current role at [Reply](https://www.reply.com/cluster-reply/en/) in Milan (IT), I am dedicated to delivering high-quality cloud solutions with a focus on modern digital technologies. 
 
 ## Interests
- {{< title6 "Cloud Computing" >}} {{< title6 "Azure" >}} {{< title6 "Kubernetes" >}} {{< title6 "Linux" >}} {{< title6 "Virtualization" >}}
-  {{< title6 "Artificial Intelligence" >}} 
-{{< title6 "DevOps" >}} {{< title6 "Coding" >}}  {{< title6 "Spatial Computing" >}}
+{{< title6 "Cloud Computing" >}} {{< title6 "Azure" >}} {{< title6 "Kubernetes" >}} {{< title6 "Serverless" >}}
+{{< title6 "Artificial Intelligence" >}} 
+{{< title6 "DevOps" >}} {{< title6 "Coding" >}}
 
 ## Work Experience
 {{< book title="Senior Cloud engineer" authors="Reply, Jan 2023 - Present" image="images/reply.jpg" size="300x" >}}
