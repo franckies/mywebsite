@@ -1,6 +1,6 @@
 [submodule "themes/hugo-refresh"]
 	path = themes/hugo-refresh
-	url = https://github.com/PippoRJ/hugo-refresh.git
+	url = https://github.com/franckies/hugo-refresh.git
 [submodule "static/pinbaudo"]
 	path = static/pinbaudo
 	url = https://github.com/franckies/Pinbaudo

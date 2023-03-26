@@ -134,7 +134,8 @@ Apart from that, you must also specify path to certificate files so that  ```etc
 ```
 So the final version of the command to use ```etcdl``` from the ETCDL pod is the following:
 ```
-kubectl exec etcd-master -n kube-system -- sh -c " ETCDL_API=3  etcdctl get / --prefix --keys-only --limit=10 --cacert /etc/kubernetes/pki/etcd/ca.crt --cert /etc/kubernetes/pki/etcd/server.crt  --key /etc/kubernetes/pki/etcd/server.key" 
+kubectl exec etcd-master -n kube-system -- sh -c " ETCDL_API=3  etcdctl get / --prefix --keys-only --limit=10 --cacert /etc/kubernetes/pki/etcd/ca.crt \\
+--cert /etc/kubernetes/pki/etcd/server.crt  --key /etc/kubernetes/pki/etcd/server.key" 
 ```
 
 # Kube api server
