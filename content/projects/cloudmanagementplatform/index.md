@@ -28,12 +28,12 @@ CMP offers AI-driven deployments with real-time analysis and rapid error resolut
 - Implementation of best practices with Terraform
 
 ## Gallery
-{{< figure src="images/screenshot1.png" title="CMP Dashboard" >}}
-{{< figure src="images/screenshot2.png" title="Resource Overview" >}}
-{{< figure src="images/screenshot3.png" title="Cost Management" >}}
-{{< figure src="images/screenshot4.png" title="Monitoring" >}}
-{{< figure src="images/screenshot5.png" title="Automation" >}}
-{{< figure src="images/screenshot6.png" title="Backup & Recovery" >}}
-{{< figure src="images/screenshot7.png" title="AI-driven Analysis" >}}
-{{< figure src="images/screenshot8.png" title="Multi-cloud View" >}}
-{{< figure src="images/screenshot9.png" title="Best Practices" >}}
+{{< figure src="images/screenshot1.png" title="CMP Dashboard" width="700" >}}
+{{< figure src="images/screenshot2.png" title="Resource Overview" width="700" >}}
+{{< figure src="images/screenshot3.png" title="Cost Management" width="700" >}}
+{{< figure src="images/screenshot4.png" title="Monitoring" width="700" >}}
+{{< figure src="images/screenshot5.png" title="Automation" width="700" >}}
+{{< figure src="images/screenshot6.png" title="Backup & Recovery" width="700" >}}
+{{< figure src="images/screenshot7.png" title="AI-driven Analysis" width="700" >}}
+{{< figure src="images/screenshot8.png" title="Multi-cloud View" width="700" >}}
+{{< figure src="images/screenshot9.png" title="Best Practices" width="700" >}}
