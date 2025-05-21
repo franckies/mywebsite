@@ -22,6 +22,10 @@ In my current role at [Reply](https://www.reply.com/cluster-reply/en/) in Milan 
 {{< title6 "DevOps" >}} {{< title6 "Coding" >}}
 
 ## Work Experience
+{{< book title="Manager, Cloud Generative AI Business Unit" authors="Reply, May 2025 - Present" image="images/reply.jpg" size="300x" >}}
+As Manager of the Cloud Generative AI Business Unit at Reply, I lead strategic initiatives and oversee a multidisciplinary team focused on delivering innovative AI-driven cloud solutions. While managing business growth and high-impact projects, I remain deeply involved in technical strategy, architecture, and solution design. I actively guide and mentor engineers, contribute to hands-on development, and ensure the adoption of best practices in generative AI, cloud, and DevOps to deliver value for enterprise clients.
+{{< /book >}}
+
 {{< book title="Senior Cloud engineer" authors="Reply, Jan 2023 - Present" image="images/reply.jpg" size="300x" >}}
 As a Senior Cloud Engineer, I lead a team of 6 Cloud and DevOps Engineers in the development and implementation of cloud-native infrastructures and applications. My expertise in serverless architectures, Kubernetes, and containerization enables me to design and deploy scalable and secure cloud-based solutions for our customers.
 {{< /book >}}
@@ -61,4 +65,4 @@ During my Master's degree studies, I gained a well-rounded understanding of comp
 {{< /book >}}
 
 ## Publications
-1. **Teaching Internet of Things using a Raspberry PI based RC-car**, Pavol Bistack, Reza Moezzi, Giuseppina Nicassio, Francesco Semeraro. IEEE - 2020. 
+1. **Teaching Internet of Things using a Raspberry PI based RC-car**, Pavol Bistack, Reza Moezzi, Giuseppina Nicassio, Francesco Semeraro. IEEE - 2020.
